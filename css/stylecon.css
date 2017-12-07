@@ -1,0 +1,139 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #111111;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: navy;
+    color: white;
+}
+
+/*custom animation code*/
+@-webkit-keyframes spin-right{
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body { background-color: black; }
+div {
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  color: aqua;
+}
+div p { margin:0; }
+#title:hover { text-shadow: 0 0 200px green,0 0 80px palegreen,0 0 6px blue; }
+#code:hover { text-shadow: 0 0 100px aqua,0 0 40px blue,0 0 8px aqua; }
+#title {
+  color: blue;
+  text-shadow: 0 0 80px aqua,0 0 30px lightblue,0 0 6px blue;
+}
+/*title is the name of the class*/
+#title span {
+  animation: upper 11s linear infinite;
+}
+#code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+#code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity:.4;
+}
+/*specifies animation code*/
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px darkblue,0 0 30px aqua,0 0 6px blue;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px blue,0 0 30px darkblue,0 0 6px aqua;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    opacity:0.4; text-shadow: none; 
+  }
+}
+/* Continent positioning
+6 different continents */
+
+#northamerica {
+width: 550px;
+}
+
+#southamerica {
+width: 550px;
+height: 310px;
+position: relative;
+bottom: 10px;
+}
+
+#europe {
+width: 270px;
+height: 315px;
+position: relative;
+left: 273px;
+bottom: 329px;
+border: 3px;
+}
+
+#asia {
+width: 275px;
+height: 315px;
+position: relative;
+left: 271px;
+bottom: 332px;
+border: 3px;
+}
+
+#africa {
+height: 312px;
+width: 325px;
+position: relative;
+bottom: 260px;
+left: -59px;
+border: 3px;
+}
+
+#australia {
+height: 315px;
+width: 325px;
+position: relative;
+bottom: 182px;
+left: 110px;
+border: 3px;}
+}
